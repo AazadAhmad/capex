@@ -7,17 +7,18 @@ h1, h2, h3, h4, h5, h6, p{ font-weight: 400;}
 .main-form{margin: 30px 0;}
 .main-form .table{margin-bottom: 10px;}
 .main-form .form-group{margin-bottom: 0;}
-.main-form .form-group .text-box{margin-bottom: 0; height: 25px; color: #999; border-radius: 0; padding:5px;}
+.main-form .form-group .text-box{margin-bottom: 0; height: 25px; color: #999; border-radius: 0; padding:5px 3px;}
 .main-form .form-group .text-box:focus{max-width: 250px;width: 250px;color: #e31837}
 .width200{ max-width: 250px;width: 250px; }
 .backgroundmain{background: #e31837; color: #fff;border-color: #fff !important; }
 .backgroundsecond{background: #f1f1f1; color: #101010;border-color: #fff !important; }
+.backgroundcccccc{background: #cccccc; color: #101010;border-color: #fff !important; }
 
 .big-table .table{ width: 1600px;max-width: 1600px; }
 .big-table .table .table-bordered{ border: 1px solid #ddd; }
 .big-table::-webkit-scrollbar {width: 10px !important;}
 .big-table::-webkit-scrollbar-track {box-shadow: inset 0 0 1px grey; }
-.big-table::-webkit-scrollbar-thumb {background: #f1f1f1;transition: 0.5s; }
+.big-table::-webkit-scrollbar-thumb {background: #cccccc;transition: 0.5s; }
 .big-table::-webkit-scrollbar-thumb:hover {background: #656565; transition: 0.5s;}
 
 .padding-top-15{padding-top: 15px !important;}
@@ -27,6 +28,18 @@ h1, h2, h3, h4, h5, h6, p{ font-weight: 400;}
 .text-box-new:-ms-input-placeholder {color:#fff;}
 .text-box-new:-moz-placeholder {color:#fff;}
 .text-box-new:focus{color: #fff; border: 1px solid #fff; border-radius:0; transition:none; box-shadow: none;}
+
+.text-box-dark{ background: transparent;  box-shadow: none; color: #0000; border-radius: 0; text-align: center;height: 25px; padding:5px 3px;}
+.text-box-dark::-webkit-input-placeholder {color:#000;}
+.text-box-dark::-moz-placeholder { color:#000;}
+.text-box-dark:-ms-input-placeholder {color:#000;}
+.text-box-dark:-moz-placeholder {color:#000;}
+.text-box-dark:focus{max-width: 250px;width: 250px;color: #e31837}
+
+/*.big-table tr td:nth-child(1){width: 15%;}*/
+
+.inr{ position: relative; width: 10px; display: inline-block; }
+.inr:before{ content: "\f156";font-family: FontAwesome;left:1px;position:absolute;top:-15px;}
 
 
 @media only screen and (max-width:1024px){
@@ -39,4 +52,6 @@ h1, h2, h3, h4, h5, h6, p{ font-weight: 400;}
 
 @media only screen and (max-width:767px){
 	.main-form .table{ margin-bottom: 5px; }
+	.width200{ max-width: 130px; width: 130px; }
+
 }
